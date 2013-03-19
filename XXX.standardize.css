@@ -1,0 +1,656 @@
+@charset "utf-8";
+
+/*/////////////////////////
+// Box
+/////////////////////////*/
+
+	/* Position, Display, Width, Height, Background etc. */
+		
+		/* Reset */
+		
+			html,
+			body,
+		
+			div,
+			
+			ul,
+			ol,
+			dl,
+			
+			li,
+			
+			dt,
+			dd,
+			
+			hr,
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			
+			form,
+			
+			fieldset,
+			legend,
+			
+			label,
+			
+			input,
+			button,
+			textarea,
+			.textarea,			
+			p,
+			a,
+			
+			img,
+			
+			blockquote,
+			
+			table,
+			caption,
+			thead,
+			tbody,
+			tfoot,
+			tr,	
+			th,
+			td
+			{
+				margin: 0;
+				padding: 0;
+				outline: 0;
+				border: 0;
+				
+				background-color: transparent;
+				background-image: none;
+			}
+						
+		body
+		{
+			background-color: #FFFFFF;
+			background-image: none;
+		}
+		
+		hr
+		{
+			display: block;			
+			height: 1px;			
+			background-color: #EEEEEE;
+			
+			margin: 0 20px;
+		}
+		
+		ul,
+		ol
+		{
+			list-style-position: outside;
+			
+			padding: 5px;
+			padding-left: 10px;
+		}
+				
+		dl
+		{
+			padding: 5px;
+		}
+		
+		li
+		{
+			margin-left: 10px;
+		}
+		
+		dd
+		{
+			padding-left: 10px;
+		}		
+		
+		table
+		{
+			table-layout: auto;
+			empty-cells: show;			
+			caption-side: top;
+			
+			/* Remove cell spacing */
+			border-collapse: separate;
+			border-spacing: 0;
+		}
+		
+		img
+		{
+			vertical-align: bottom;
+		}
+		
+		label
+		{
+			display: inline;
+		}
+		
+		blockquote,
+		q
+		{
+			background-color: #fffaf1;
+		}
+		
+		blockquote
+		{
+			padding: 3px;
+			padding-left: 6px;
+			
+			border: 1px dashed #ece4d7;
+		}
+		
+		fieldset
+		{
+			border: 1px solid #EEEEEE;
+			
+			display: block;
+		}
+		
+		form
+		{
+			position: relative;
+		}
+		
+		input,
+		button,
+		textarea,
+		.textarea
+		{
+			padding: 4px 3px;
+		}
+		
+		input[type="file"]
+		{
+			border-style: solid;
+			border-color: #EEEEEE;
+			border-width: 0px;
+		}
+		
+		
+		select,
+		option
+		{
+			/*margin: 0;
+			padding: 0;
+			outline: 0;
+			border: 0;*/
+			
+			background-color: transparent;
+			background-image: none;
+		}
+		
+		select
+		{
+			border-style: dotted;
+			border-width: 1px;
+			border-color: #DDDDDD;
+		}
+		
+		option
+		{
+		}
+						
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		button
+		{
+			background-color: #EEEEEE;
+			
+			padding: 6px 5px;
+			
+			padding-left: 12px;
+			padding-right: 12px;
+			
+			/* IE */
+			overflow: visible;
+			
+			border-width: 1px;
+			border-style: solid;
+			
+			border-color: #CCCCCC;
+		}
+		
+		/* Button */
+								
+			/* Extra */
+			
+			blockquote
+			{
+				/*-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-ms-border-radius: 8px;
+				-o-border-radius: 8px;*/
+				border-radius: 8px;				
+			}
+						
+			input,
+			select,
+			option,
+			textarea
+			{
+				/*-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;*/
+				border-radius: 4px;	
+			}
+							
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			button
+			{
+				/*-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;*/
+				border-radius: 10px;		
+			}
+			
+		
+		
+
+/*/////////////////////////
+// Text
+/////////////////////////*/
+
+	body
+	{
+		/*
+		62.5% equals 10px
+		68.75% equals 11px
+		*/
+		font-size: 68.75%;
+		line-height: 1.2em;
+		
+		font-family: Tahoma, Verdana, Arial, Helvetica, Arial, Garuda, Geneva, sans-serif;
+		
+		color: #444444;
+		
+		direction: ltr;	
+	}
+	
+	pre,
+	
+	div,
+	span,
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	
+	form,
+	fieldset,
+	legend,
+	label,
+	input,
+	button,
+	textarea,
+	.textarea,
+	select,
+	
+	table,
+	caption,
+	thead,
+	tbody,
+	tfoot,
+	tr,
+	th,
+	td
+	{
+		font-size: 1em;
+		line-height: 1.45em;
+	}
+	
+	body,
+	
+	pre,
+	
+	div,
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	
+	form,
+	fieldset,
+	legend,
+	label,
+	input,
+	button,
+	textarea,
+	.textarea,
+	select,
+	
+	caption,
+	th,
+	td
+	{
+		font-family: Tahoma, Verdana, Arial, Helvetica, Garuda, Geneva, sans-serif;
+		
+		text-align: left;
+		
+		text-decoration: none;
+		text-transform: none;
+			
+		font-style: normal;	
+		font-variant: normal;
+		font-weight: normal;
+		
+		text-indent: 0;
+	}
+	
+
+	/* Headings */
+	
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6
+		{
+			font-weight: bold;
+		}
+		
+		
+		h1
+		{
+			font-size: 2.4em;
+		}
+		
+		h2
+		{
+			font-size: 1.8em;
+		}
+		
+		h3
+		{
+			font-size: 1.6em;
+		}
+		
+		h4,
+		h5,
+		h6
+		{
+			font-size: 1.3em;
+		}
+		
+	/* Horizontal Ruler */
+	
+		hr
+		{
+			color: #EEEEEE;
+			
+			font-size: 0;
+			line-height: 0;
+		}
+
+	/* Input */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="file"],
+		textarea,
+		select
+		{
+			color: #444444;
+			
+			font-size: 1.2em;
+		}
+			
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		button
+		{
+			text-align: center;
+			
+			font-size: 1.2em;
+			
+			color: #222222;
+		}
+		/*
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		button:hover,
+		input[type="button"]:focus,
+		input[type="submit"]:focus,
+		input[type="reset"]:focus,
+		button:focus
+		{
+			color: #000000;
+		}
+		*/
+	/* Quote */
+	
+		blockquote,
+		q
+		{
+			color: #410300;
+		}
+
+	/* Bold / Strong */
+	
+		b,
+		strong
+		{
+			font-weight: bold;
+		}
+
+	/* Italic / Emphasized */
+	
+		i,
+		em
+		{
+			font-style: italic;
+		}
+
+	/* Underlined / Inserted */
+	
+		u,
+		ins
+		{
+			text-decoration: underline;	
+		}
+
+	/* Striked-Through / Deleted */
+	
+		striked,
+		del
+		{
+			text-decoration: line-through;	
+		}
+
+	/* Super- & Subscript */
+	
+		sub
+		{
+			font-size: 80%;
+			vertical-align: sub;
+			font-weight: bold;
+			
+			color: #888888;
+		}
+		
+		sup
+		{
+			font-size: 80%;
+			vertical-align: super;
+			font-weight: bold;
+			
+			color: #888888;
+		}
+
+	/* Definition */
+		
+		dt
+		{
+			text-decoration: underline;
+		}
+		
+		dd
+		{
+			color: #666666;
+		}
+
+	/* Acronym / Abbreviation */
+	
+		acronym,
+		abbr
+		{
+			border-bottom: 1px dashed #999999;			
+		}
+
+	/* Headings */
+		
+		legend,
+		caption,
+		th
+		{
+			text-align: center;
+			
+			font-weight: bold;
+		}
+
+	/* Links */
+	
+		a,
+		a:link,
+		a:visited,
+		a:hover,
+		a:active,
+		a:focus
+		{
+			text-decoration: none;
+			
+			color: #0373f0;
+		}
+		
+		a:hover,
+		a:active,
+		a:focus
+		{
+			text-decoration: underline;
+			
+			color: #3b8eea;
+		}
+		
+		a.invisible,
+		a.invisible:link,
+		a.invisible:visited,
+		a.invisible:hover,
+		a.invisible:active,
+		a.invisible:focus
+		{
+			text-decoration: none;
+		}
+				
+		a img,
+		a:link img,
+		a:visited img,
+		a:hover img,
+		a:active img,
+		a:focus img
+		{	
+			text-decoration: none;
+		}
+
+/*/////////////////////////
+// Other
+/////////////////////////*/
+	
+	/* Lists */
+	
+		ul
+		{
+			list-style-type: disc;
+		}
+				
+		ol
+		{	
+			list-style-type: decimal;
+		}
+
+	/* Quote */
+
+		blockquote,
+		q
+		{
+			quotes: '"' '"';
+		}
+	
+	/* Cursor */
+	
+		acronym,
+		abbr
+		{
+			cursor: help;
+		}
+		
+		a,
+		a:link,
+		a:visited,
+		a:hover,
+		a:active,
+		button,
+		select,
+		optgroup,
+		option,
+		input,
+		label
+		{
+			cursor: pointer;
+		}
+		
+		
+		input[type="text"],
+		input[type="password"],
+		textarea
+		{
+			cursor: text;
+		}
+		
+		a[disabled],
+		input[disabled],
+		textarea[disabled],
+		button[disabled],
+		select[disabled],		
+		a[disabled]:hover,
+		input[disabled]:hover,
+		textarea[disabled]:hover,
+		button[disabled]:hover,
+		select[disabled]:hover
+		{
+			cursor: not-allowed;
+		}
+				
+		.textarea
+		{
+			position: absolute;
+			
+			top: -10000px;
+			left: -10000px;
+		}
+		
+		.clearFloats
+		{
+			clear: both;
+			
+			display: block;
+	
+			height: 0;
+			line-height: 0;
+			
+			border-width: 0px;
+		}
