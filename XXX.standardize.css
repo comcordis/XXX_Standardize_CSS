@@ -73,6 +73,12 @@
 			background-image: none;
 		}
 		
+		html,
+		body
+		{
+			height: 100%;
+		}
+		
 		hr
 		{
 			display: block;			
@@ -104,7 +110,7 @@
 		dd
 		{
 			padding-left: 10px;
-		}		
+		}
 		
 		table
 		{
@@ -125,6 +131,12 @@
 		label
 		{
 			display: inline;
+		}
+		
+		p
+		{
+			padding-top: 4px;
+			padding-bottom: 4px;
 		}
 		
 		blockquote,
@@ -159,6 +171,8 @@
 		.textarea
 		{
 			padding: 4px 3px;
+			
+			webkit-appearance: none;
 		}
 		
 		input[type="file"]
@@ -186,6 +200,8 @@
 			border-style: dotted;
 			border-width: 1px;
 			border-color: #DDDDDD;
+			
+			webkit-appearance: none;
 		}
 		
 		option
@@ -211,6 +227,8 @@
 			border-style: solid;
 			
 			border-color: #CCCCCC;
+			
+			webkit-appearance: none;
 		}
 		
 		/* Button */
@@ -365,12 +383,12 @@
 		
 		h1
 		{
-			font-size: 2.4em;
+			font-size: 2.8em;
 		}
 		
 		h2
 		{
-			font-size: 1.8em;
+			font-size: 2em;
 		}
 		
 		h3
@@ -407,7 +425,7 @@
 			
 			font-size: 1.2em;
 		}
-			
+		
 		input[type="button"],
 		input[type="submit"],
 		input[type="reset"],
@@ -479,8 +497,6 @@
 			font-size: 80%;
 			vertical-align: sub;
 			font-weight: bold;
-			
-			color: #888888;
 		}
 		
 		sup
@@ -488,8 +504,6 @@
 			font-size: 80%;
 			vertical-align: super;
 			font-weight: bold;
-			
-			color: #888888;
 		}
 
 	/* Definition */
