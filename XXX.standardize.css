@@ -40,8 +40,9 @@
 			
 			input,
 			button,
-			textarea,
-			.textarea,			
+			select,
+			option,
+			textarea,		
 			p,
 			a,
 			
@@ -58,10 +59,10 @@
 			th,
 			td
 			{
-				margin: 0;
-				padding: 0;
-				outline: 0;
-				border: 0;
+				margin: 0px;
+				padding: 0px;
+				outline: 0px;
+				border: 0px;
 				
 				background-color: transparent;
 				background-image: none;
@@ -120,7 +121,23 @@
 			
 			/* Remove cell spacing */
 			border-collapse: separate;
-			border-spacing: 0;
+			border-spacing: 1px;
+		}
+		
+		th
+		{
+			vertical-align: middle;
+		}
+		
+		td
+		{
+			vertical-align: middle;
+		}
+		
+		th,
+		td
+		{
+			border-radius: 2px;
 		}
 		
 		img
@@ -142,7 +159,7 @@
 		blockquote,
 		q
 		{
-			background-color: #fffaf1;
+			background-color: #FFFAF1;
 		}
 		
 		blockquote
@@ -150,12 +167,12 @@
 			padding: 3px;
 			padding-left: 6px;
 			
-			border: 1px dashed #ece4d7;
+			border: 1px dashed #ECE4D7;
 		}
 		
 		fieldset
 		{
-			border: 1px solid #EEEEEE;
+			border-width: 1px solid #EEEEEE;
 			
 			display: block;
 		}
@@ -167,54 +184,36 @@
 		
 		input,
 		button,
-		textarea,
-		.textarea
+		textarea
 		{
 			padding: 4px 3px;
-			
-			webkit-appearance: none;
 		}
 		
 		input[type="file"]
 		{
-			border-style: solid;
-			border-color: #EEEEEE;
-			border-width: 0px;
+			border-width: 0px solid #EEEEEE;
 		}
 		
 		
 		select,
 		option
 		{
-			/*margin: 0;
-			padding: 0;
-			outline: 0;
-			border: 0;*/
-			
 			background-color: transparent;
 			background-image: none;
 		}
 		
-		select
-		{
-			border-style: dotted;
-			border-width: 1px;
-			border-color: #DDDDDD;
-			
-			webkit-appearance: none;
-		}
-		
 		option
 		{
+			padding: 5px;
 		}
-						
+								
 		input[type="button"],
 		input[type="submit"],
 		input[type="reset"],
 		button
-		{
-			background-color: #EEEEEE;
-			
+		{			
+			background-color: #68BD2A;
+						
 			padding: 6px 5px;
 			
 			padding-left: 12px;
@@ -223,12 +222,19 @@
 			/* IE */
 			overflow: visible;
 			
-			border-width: 1px;
-			border-style: solid;
-			
-			border-color: #CCCCCC;
-			
-			webkit-appearance: none;
+			border-width: 3px solid #CCCCCC;
+		}
+		
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		button:hover,
+		input[type="button"]:focus,
+		input[type="submit"]:focus,
+		input[type="reset"]:focus,
+		button:focus
+		{
+			background-color: #60A62E;
 		}
 		
 		/* Button */
@@ -237,10 +243,6 @@
 			
 			blockquote
 			{
-				/*-moz-border-radius: 8px;
-				-webkit-border-radius: 8px;
-				-ms-border-radius: 8px;
-				-o-border-radius: 8px;*/
 				border-radius: 8px;				
 			}
 						
@@ -249,10 +251,6 @@
 			option,
 			textarea
 			{
-				/*-moz-border-radius: 4px;
-				-webkit-border-radius: 4px;
-				-ms-border-radius: 4px;
-				-o-border-radius: 4px;*/
 				border-radius: 4px;	
 			}
 							
@@ -261,10 +259,6 @@
 			input[type="reset"],
 			button
 			{
-				/*-moz-border-radius: 10px;
-				-webkit-border-radius: 10px;
-				-ms-border-radius: 10px;
-				-o-border-radius: 10px;*/
 				border-radius: 10px;		
 			}
 			
@@ -310,7 +304,6 @@
 	input,
 	button,
 	textarea,
-	.textarea,
 	select,
 	
 	table,
@@ -346,7 +339,6 @@
 	input,
 	button,
 	textarea,
-	.textarea,
 	select,
 	
 	caption,
@@ -421,9 +413,15 @@
 		textarea,
 		select
 		{
-			color: #444444;
+			color: #0373f0;
 			
 			font-size: 1.2em;
+		}
+		
+		select,
+		option
+		{
+			vertical-align: middle;
 		}
 		
 		input[type="button"],
@@ -433,23 +431,27 @@
 		{
 			text-align: center;
 			
-			font-size: 1.2em;
+			font-size: 1.6em;
 			
-			color: #222222;
+			letter-spacing: 1px;
+			
+			color: #FFFFFF;
 		}
-		/*
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		input[type="button"]:focus,
-		input[type="submit"]:focus,
-		input[type="reset"]:focus,
-		button:focus
-		{
-			color: #000000;
+		
+		input[type="button"] img,
+		input[type="submit"] img,
+		input[type="reset"] img,
+		button img
+		{	
+			text-decoration: none;
+			
+			vertical-align: middle;
+			
+			margin-right: 4px;
+			
+			margin-bottom: 2px;
 		}
-		*/
+		
 	/* Quote */
 	
 		blockquote,
@@ -548,7 +550,7 @@
 		{
 			text-decoration: none;
 			
-			color: #0373f0;
+			color: #0373F0;
 		}
 		
 		a:hover,
@@ -556,8 +558,6 @@
 		a:focus
 		{
 			text-decoration: underline;
-			
-			color: #3b8eea;
 		}
 		
 		a.invisible,
@@ -578,6 +578,10 @@
 		a:focus img
 		{	
 			text-decoration: none;
+			
+			vertical-align: middle;
+			
+			margin-right: 4px;
 		}
 
 /*/////////////////////////
@@ -648,15 +652,19 @@
 		{
 			cursor: not-allowed;
 		}
-				
-		.textarea
+	
+	/* Webkit appearance */
+	
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		button
 		{
-			position: absolute;
-			
-			top: -10000px;
-			left: -10000px;
+			-webkit-appearance: none;
 		}
-		
+	
+	/* Other */
+				
 		.clearFloats
 		{
 			clear: both;
@@ -668,3 +676,49 @@
 			
 			border-width: 0px;
 		}
+		
+		.centered
+		{
+			width: 960px;
+			margin: 0 auto;
+		}
+		
+		.dataTable
+		{			
+			width: 100%;
+		}
+		
+		.dataTable th
+		{
+			color: #252525;
+			
+			background-color: #E1E1E1;
+			
+			padding: 4px;
+			
+			font-size: 1em;
+		}
+				
+		.dataTable td
+		{
+			padding: 5px 3px;
+			
+			border-style: solid;
+			
+			border-left-width: 1px;
+		}
+		
+		.dataTable tbody tr:nth-child(odd) td
+		{
+			background-color: #F5F5F5;
+			
+			border-color: #F5F5F5;
+		}
+		
+		.dataTable tbody tr:nth-child(even) td
+		{
+			background-color: #FFFFFF;
+			
+			border-color: #FFFFFF;
+		}
+		
