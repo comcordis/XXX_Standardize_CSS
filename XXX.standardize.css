@@ -684,17 +684,26 @@
 		.dataTable
 		{			
 			width: 100%;
+			
+			border-collapse: separate;
+			border-spacing: 0px;
 		}
 		
 		.dataTable th
 		{
 			color: #252525;
 			
+			
 			background-color: #E1E1E1;
 			
 			padding: 4px;
 			
-			font-size: 1em;
+			font-size: 1.1em;
+			
+			border-bottom: 1px solid #FFFFFF;
+			border-left: 1px solid #FFFFFF;
+			
+			border-radius: 0px;
 		}
 				
 		.dataTable td
@@ -704,19 +713,23 @@
 			border-style: solid;
 			
 			border-left-width: 1px;
+			border-bottom-width: 1px;
+			border-bottom-color: #E1E1E1;
+			
+			border-radius: 0px;
 		}
 		
 		.dataTable tbody tr:nth-child(odd) td
 		{
-			background-color: #F5F5F5;
+			background-color: #EEEEEE;
 			
-			border-color: #F5F5F5;
+			border-left-color: #EAEAEA;
 		}
 		
 		.dataTable tbody tr:nth-child(even) td
 		{
 			background-color: #FFFFFF;
 			
-			border-color: #FFFFFF;
+			border-left-color: #FBFBFB;
 		}
 		
