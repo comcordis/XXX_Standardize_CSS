@@ -209,11 +209,8 @@
 		{			
 			background-color: #68BD2A;
 						
-			padding: 6px 5px;
-			
-			padding-left: 12px;
-			padding-right: 12px;
-			
+			padding: 4px 6px;
+						
 			/* IE */
 			overflow: visible;
 			
@@ -254,7 +251,7 @@
 			input[type="reset"],
 			button
 			{
-				border-radius: 10px;		
+				border-radius: 6px;		
 			}
 			
 		
@@ -426,7 +423,7 @@
 		{
 			text-align: center;
 			
-			font-size: 1.6em;
+			font-size: 1.3em;
 			
 			letter-spacing: 1px;
 			
