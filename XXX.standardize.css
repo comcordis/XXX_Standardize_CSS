@@ -167,7 +167,7 @@
 		
 		fieldset
 		{
-			border-width: 1px solid #EEEEEE;
+			border: 1px solid #EEEEEE;
 			
 			display: block;
 		}
@@ -186,7 +186,7 @@
 		
 		input[type="file"]
 		{
-			border-width: 0px solid #EEEEEE;
+			border: 0px solid #EEEEEE;
 		}
 		
 		
@@ -214,7 +214,7 @@
 			/* IE */
 			overflow: visible;
 			
-			border-width: 3px solid #CCCCCC;
+			border: 3px solid #CCCCCC;
 		}
 		
 		input[type="button"]:hover,
