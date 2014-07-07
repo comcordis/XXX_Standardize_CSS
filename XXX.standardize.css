@@ -199,7 +199,8 @@
 		
 		option
 		{
-			padding: 5px;
+			padding: 2px;
+			margin: 3px;
 		}
 								
 		input[type="button"],
